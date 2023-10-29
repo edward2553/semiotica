@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DANN POLI</title>
+  </head>
+  <body>
+    <header>
+      <h1>HOTEL DANN POLI</h1>
+      <div>
+        <button><a href="index.html">INICIO</a></button>
+        <button><a href="habitaciones.html">HABITACIONES</a></button>
+        <button><a href="reservas.html">RESERVAS</a></button>
+      </div>
+    </header>
+    <br />
+    <main>
+      <div>
+        <h2>RESERVA TU ESTADIA AHORA</h2>
+        <br />
+      </div>
+
+      <div>
+        <form id="myForm">
+          <label for="id">Identificación:</label><br />
+          <input
+            type="text"
+            id="id"
+            required
+            name="id"
+            placeholder="Digite su cedula"
+          /><br />
+          <label for="client_name">Nombre completo:</label><br />
+          <input
+            type="text"
+            required
+            id="client_name"
+            name="client_name"
+            placeholder="Escriba su nombre completo"
+            value=""
+          /><br />
+          <label for="birth_date">Fecha de nacimiento</label>
+          <input required type="date" id="birth_date" name="birth_date" />
+          <br />
+          <p id="age">Edad:</p>
+          <br />
+          <label for="email">Email:</label><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="email@example.com"
+          /><br />
+          <label for="tel">Número celular</label><br />
+          <input
+            type="tel"
+            id="tel"
+            name="tel"
+            required
+            placeholder="3234567897"
+          /><br />
+          <label for="room">Seleccione la habitacion que desea:</label><br />
+          <select required name="room" id="room">
+            <option value="">Seleccione una habitación</option>
+            <option value="STANDAR KING Y VISTA AL MAR">
+              STANDAR KING Y VISTA AL MAR
+            </option>
+            <option value="SUPERIOR TWIN Y VISTA AL MAR">
+              SUPERIOR TWIN Y VISTA AL MAR
+            </option>
+            <option value="SUITE CON BALCÓN Y VISTA AL MAR">
+              SUITE CON BALCÓN Y VISTA AL MAR
+            </option></select
+          ><br />
+          <br />
+          <img id="photo_room" alt="Foto habitación" />
+          <br />
+          <br />
+          <p>Valor habitacion $</p>
+          <p id="room_value"></p>
+          <br />
+          <label for="initial_date">Fecha de inicio:</label>
+          <input required type="date" id="initial_date" name="initial_date" />
+          <br />
+          <label for="end_date">Fecha fin:</label>
+          <input required type="date" id="end_date" name="end_date" />
+          <br />
+          <p>Cantidad de noches</p>
+          <p id="nights"></p>
+          <br />
+          <label for="service1">Seleccione el servicio adicional 1:</label
+          ><br />
+          <select name="service1" id="service1">
+            <option value="">Ninguno</option>
+            <option value="Desayuno tipo buffet">Desayuno tipo buffet</option>
+            <option value="Lavanderia">Lavanderia</option>
+            <option value="Masajes en la habitacion">
+              Masajes en la habitacion
+            </option>
+          </select>
+          <br />
+          <p>Precio servicio</p>
+          <p id="price_service_1"></p>
+          <br />
+          <label for="service2">Seleccione el servicio adicional 2:</label>
+          <br />
+          <select name="service2" id="service2">
+            <option value="">Ninguno</option>
+            <option value="Desayuno tipo buffet">Desayuno tipo buffet</option>
+            <option value="Lavanderia">Lavanderia</option>
+            <option value="Masajes en la habitacion">
+              Masajes en la habitacion
+            </option>
+          </select>
+          <br />
+          <p>Precio servicio</p>
+          <p id="price_service_2"></p>
+          <br />
+          <p>Sub total</p>
+          <p id="subtotal">Subtotal $</p>
+          <br />
+          <p>Iva</p>
+          <p id="iva">IVA (19%)</p>
+          <br />
+          <p>Total</p>
+          <p id="total">Total $</p>
+          <br />
+          <input
+            onclick="validateForm()"
+            type="submit"
+            value="Calcular total"
+          />
+          <br />
+          <p id="formErrors"></p>
+        </form>
+      </div>
+      <br />
+      <br />
+    </main>
+    <footer>
+      <table>
+        <tr>
+          <th>DIRECCION</th>
+          <th>UBICACION/MAPA</th>
+          <th>REDES SOCIALES</th>
+        </tr>
+        <tr>
+          <td>
+            <p>Medellin, Poblado</p>
+          </td>
+          <td>
+            <p>Carrera 48 No. 7 – 151 - El Poblado</p>
+          </td>
+          <td>
+            <p>
+              FACEBOOK: DANN_POLI<br />
+              INSTAGRAM: @DANN_POLI<br />
+              X: @DANNPOLIOFFICIAL<br />
+              TIKTOK: @DANN_POLI<br />
+            </p>
+          </td>
+        </tr>
+      </table>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
