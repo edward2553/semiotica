@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0px;
+}
+
+p {
+  font-weight: 100;
+}
+
+h1 {
+  font-weight: 500;
+}
+
+h2,
+h3,
+h4,
+h4,
+h6 {
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.hotelTitle {
+  font-size: 1.8rem;
+  margin-top: 0.6rem;
+}
+
+a {
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.focus:focus {
+  color: #04aa6d;
+}
+
+:target {
+  color: #04aa6d;
+}
+
+header {
+  display: flex;
+  margin: 1rem 10rem 0px 10rem;
+}
+
+nav {
+  width: 50rem;
+  margin: auto;
+  border-radius: 32px;
+  padding: 1rem;
+  background-color: var(--big-search-form_background, unset);
+  border: 1px solid var(--j-qkgmf);
+  box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.08);
+  display: flex;
+  justify-content: space-evenly;
+}
+
+main {
+  margin: 1rem 10rem 0px 10rem;
+}
+
+footer {
+  margin: 1rem 10rem 0px 10rem;
+}
+
+#formErrors {
+  color: red;
+  font-size: larger;
+  font-weight: bold;
+}
+ 
+#tablePhotos {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+#tablePhotos td,
+#tablePhotos th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#tablePhotos tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#tablePhotos tr:hover {
+  background-color: #ddd;
+}
+
+#tablePhotos th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04aa6d;
+  color: white;
+}
+
+.tableSection {
+  margin-top: 2rem;
+  overflow: auto;
+  margin-bottom: 3rem;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #04aa6d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #04aa6d;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+#myForm {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 1rem 5rem 1rem 5rem;
+}

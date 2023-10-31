@@ -4,92 +4,100 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>DANN POLI</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
   <body>
     <header>
-      <h1>HOTEL DANN POLI</h1>
-      <div>
-        <button><a href="index.html">INICIO</a></button>
-        <button><a href="habitaciones.html">HABITACIONES</a></button>
-        <button><a href="reservas.html">RESERVAS</a></button>
-      </div>
+      <h1 class="hotelTitle">HOTEL DANN POLI</h1>
+      <nav>
+        <a href="index.html">INICIO</a>
+        <a href="habitaciones.html">HABITACIONES</a>
+        <a href="reservas.html">RESERVAS</a>
+      </nav>
     </header>
     <br />
-    <main>
+    <main class="animate__animated animate__fadeIn">
       <div>
-        <h2>NUESTRAS HABITACIONES</h2>
+        <h3>NUESTRAS HABITACIONES</h3>
         <br />
       </div>
-      <table>
-        <tr>
-          <th>NOMBRE</th>
-          <th>IMAGEN</th>
-          <th>DESCRIPCION</th>
-          <th>PRECIO</th>
-        </tr>
-        <tr>
-          <td>
-            <p>STANDAR KING Y VISTA AL MAR</p>
-          </td>
-          <td>
-            <img src="img/standar_king.jpg" width="300px" />
-          </td>
-          <td>
-            <p>
-              Cómoda habitación de 20 m², para máximo 2 huéspedes. La habitación
-              dispone de aire acondicionado, Tv, cajilla de seguridad, conexión
-              Wi-fi y, además, una increíble vista a la ciudad.
-            </p>
-          </td>
-          <td>
-            <p>300.000 por noche</p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <p>SUPERIOR TWIN Y VISTA AL MAR</p>
-          </td>
-          <td>
-            <img src="img/Supreme_king.jpg" width="300px" />
-          </td>
-          <td>
-            <p>
-              Amplio espacio diseñado para máximo 4 huéspedes. Esta habitación
-              de 44 m² con vista al mar, promete ser la ideal para un descanso
-              en la ciudad de Cartagena. Dispone de dos camas Twins, un sofá
-              cama, aire acondicionado, TV y conexión Wi-fi.
-            </p>
-          </td>
-          <td>
-            <p>500.000 por noche</p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <p>SUITE CON BALCÓN Y VISTA AL MAR</p>
-          </td>
-          <td>
-            <img src="img/SUITE.PNG" width="300px" />
-          </td>
-          <td>
-            <p>
-              Nuestra habitación Suite está diseñada para brindarle
-              exclusividad, seguridad y confort. En un amplio espacio de 110 m²
-              que dispone de dos habitaciones, dos baños, dos escritorios, un
-              balcón con una increíble vista al mar, equipada con una cama King
-              y dos camas sencillas. Es para máximo 5 huéspedes y dispone de
-              conexión Wi-Fi.
-            </p>
-          </td>
-          <td>
-            <p>1'000.000 por noche</p>
-          </td>
-        </tr>
-      </table>
+      <div class="tableSection">
+        <table id="tablePhotos">
+          <tr>
+            <th>NOMBRE</th>
+            <th>IMAGEN</th>
+            <th>DESCRIPCION</th>
+            <th>PRECIO</th>
+          </tr>
+          <tr>
+            <td>
+              <p>STANDAR KING Y VISTA AL MAR</p>
+            </td>
+            <td>
+              <img src="img/standar_king.jpg" width="300px" />
+            </td>
+            <td>
+              <p>
+                Cómoda habitación de 20 m², para máximo 2 huéspedes. La
+                habitación dispone de aire acondicionado, Tv, cajilla de
+                seguridad, conexión Wi-fi y, además, una increíble vista a la
+                ciudad.
+              </p>
+            </td>
+            <td>
+              <p>300.000 por noche</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>SUPERIOR TWIN Y VISTA AL MAR</p>
+            </td>
+            <td>
+              <img src="img/Supreme_king.jpg" width="300px" />
+            </td>
+            <td>
+              <p>
+                Amplio espacio diseñado para máximo 4 huéspedes. Esta habitación
+                de 44 m² con vista al mar, promete ser la ideal para un descanso
+                en la ciudad de Cartagena. Dispone de dos camas Twins, un sofá
+                cama, aire acondicionado, TV y conexión Wi-fi.
+              </p>
+            </td>
+            <td>
+              <p>500.000 por noche</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>SUITE CON BALCÓN Y VISTA AL MAR</p>
+            </td>
+            <td>
+              <img src="img/SUITE.PNG" width="300px" />
+            </td>
+            <td>
+              <p>
+                Nuestra habitación Suite está diseñada para brindarle
+                exclusividad, seguridad y confort. En un amplio espacio de 110
+                m² que dispone de dos habitaciones, dos baños, dos escritorios,
+                un balcón con una increíble vista al mar, equipada con una cama
+                King y dos camas sencillas. Es para máximo 5 huéspedes y dispone
+                de conexión Wi-Fi.
+              </p>
+            </td>
+            <td>
+              <p>1'000.000 por noche</p>
+            </td>
+          </tr>
+        </table>
+      </div>
     </main>
     <footer>
-      <table>
+      <table id="tablePhotos">
         <tr>
           <th>DIRECCION</th>
           <th>UBICACION/MAPA</th>

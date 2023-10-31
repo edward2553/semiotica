@@ -56,6 +56,10 @@ function validateForm(event) {
 
   const userAge = currentYear - birthYear;
 
+  if (userAge < 18) {
+    errors = 'Debe ser mayor de edad';
+  }
+
   age.innerHTML = `La edad es ${userAge}`;
 
   const emailIsValid = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(
@@ -136,33 +140,18 @@ function validateForm(event) {
   }
 
   subtotal = (roomValue * totalDays) + priceService1 + priceService2 ;
-  subtotalHtml.innerHTML = subtotal;
-
   iva = subtotal * 0.19;
-  ivaHtml.innerHTML = iva;
-
   total = iva + subtotal;
-  totalHtml.innerHTML = total;
-
-  console.log({
-    userId,
-    client_name,
-    birth_date,
-    age,
-    email,
-    room,
-    photo_room,
-    room_value,
-    initial_date,
-    end_date,
-    service1,
-    service2,
-    subtotal,
-    iva,
-    total,
-  });
 
   formError.innerHTML = errors;
+  
+  if (!errors) {
+    totalHtml.innerHTML = total;
+    ivaHtml.innerHTML = iva;
+    subtotalHtml.innerHTML = subtotal;
+  } else {
+    alert(errors);
+  }
 }
 
 var form = document.getElementById('myForm');

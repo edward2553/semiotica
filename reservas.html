@@ -4,43 +4,52 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>DANN POLI</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
   <body>
     <header>
-      <h1>HOTEL DANN POLI</h1>
-      <div>
-        <button><a href="index.html">INICIO</a></button>
-        <button><a href="habitaciones.html">HABITACIONES</a></button>
-        <button><a href="reservas.html">RESERVAS</a></button>
-      </div>
+      <h1 class="hotelTitle">HOTEL DANN POLI</h1>
+      <nav>
+        <a href="index.html">INICIO</a>
+        <a href="habitaciones.html">HABITACIONES</a>
+        <a href="reservas.html">RESERVAS</a>
+      </nav>
     </header>
     <br />
-    <main>
+    <main class="animate__animated animate__fadeIn">
       <div>
-        <h2>RESERVA TU ESTADIA AHORA</h2>
+        <h3>RESERVA TU ESTADIA AHORA</h3>
         <br />
       </div>
 
       <div>
         <form id="myForm">
-          <label for="id">Identificación:</label><br />
-          <input
-            type="text"
-            id="id"
-            required
-            name="id"
-            placeholder="Digite su cedula"
-          /><br />
-          <label for="client_name">Nombre completo:</label><br />
-          <input
-            type="text"
-            required
-            id="client_name"
-            name="client_name"
-            placeholder="Escriba su nombre completo"
-            value=""
-          /><br />
+          <div>
+            <label for="id">Identificación:</label><br />
+            <input
+              type="text"
+              id="id"
+              required
+              name="id"
+              placeholder="Digite su cedula"
+            />
+          </div>
+          <div>
+            <label for="client_name">Nombre completo:</label><br />
+            <input
+              type="text"
+              required
+              id="client_name"
+              name="client_name"
+              placeholder="Escriba su nombre completo"
+              value=""
+            />
+          </div>
           <label for="birth_date">Fecha de nacimiento</label>
           <input required type="date" id="birth_date" name="birth_date" />
           <br />
@@ -141,7 +150,7 @@
       <br />
     </main>
     <footer>
-      <table>
+      <table id="tablePhotos">
         <tr>
           <th>DIRECCION</th>
           <th>UBICACION/MAPA</th>
