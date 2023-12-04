@@ -1,0 +1,38 @@
+.products-container {
+    height: 100vh;
+    overflow: scroll;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.product {
+    padding: 20px;
+    height: 470px;
+}
+
+.ProductTitleContainer {
+    width: 350px;
+    height: 50px;
+    padding: 2px 5px;
+  
+    /* Both of the following are required for text-overflow */
+    white-space: wrap;
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+
+.productCard {
+    cursor: pointer;
+    height: 100%;
+}
+
+.priceText {
+    font-size: 1.3rem;
+    font-weight: 500 !important;
+}
+
+.productTitleText {
+    font-size: 17px;
+}

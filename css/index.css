@@ -1,0 +1,163 @@
+/* 
+
+    Color constats:
+      Primary: #0583f2
+      Secondary: #ECECED
+      Third Color: #114686
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300 !important;
+}
+
+.bgColorRed {
+  background-color: red;
+}
+
+.bgColorWhitesmoke {
+  background-color: #ececed;
+}
+
+.btn-link {
+  text-decoration: none;
+  font-weight: 500 !important;
+}
+
+.width100vw {
+  width: 100vw;
+}
+
+.height100vw {
+  height: 100vh;
+}
+
+.height80vw {
+  height: 80vh;
+}
+
+.height70vw {
+  height: 70vh;
+}
+
+.boxShadow {
+  -webkit-box-shadow: 0px 7px 17px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 7px 17px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 7px 17px -4px rgba(0, 0, 0, 0.75);
+}
+
+.img-cover {
+  background-image: url('./../assets/landingcover.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+.img-cover-section2 {
+  background-image: url('./../assets/imgSection2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+.textCover {
+  font-weight: 900 !important;
+  color: #fff;
+  font-size: 6rem;
+  line-height: 100px;
+}
+
+.customw1 {
+  width: 40%;
+  margin-left: 80px;
+}
+
+.borderRound {
+  border-radius: 25px;
+}
+
+.colorBlue {
+  color: #0583f2;
+}
+
+.coverParagraph {
+  font-size: 1.5rem;
+  font-weight: 500 !important;
+  color: #023f74;
+}
+
+.customButtonCover {
+  width: 70%;
+  font-weight: 500 !important;
+  color: white;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+.bg-custom-primary {
+  background-color: #0383f2;
+}
+
+.textboxSection2 {
+  padding-left: 7rem;
+  padding-right: 7rem;
+}
+
+.p-title-section2 {
+  font-size: 5em;
+  font-weight: 900 !important;
+  color: #0383f2;
+}
+
+.p-section2 {
+  color: #0383f2;
+  font-size: 1.5rem;
+  font-weight: 500 !important;
+}
+
+.bg-section3 {
+  background-color: #f3f3f5;
+}
+
+.height70vw {
+  height: 70vh;
+}
+
+.sectiontitle1 {
+  font-size: 2rem;
+  font-weight: 500 !important;
+  color: #0583f2;
+}
+
+.cmargin {
+  margin-right: 7rem;
+  margin-left: 7rem;
+}
+
+.cwidth1 {
+  margin: auto !important;
+  width: 50%;
+}
+
+.thirdBgColor {
+  background-color: #114686;
+}
+
+.colorWhite {
+  color: white;
+}
+
+.colorGray {
+  color: #707070;
+}
+
+.fontWeight500 {
+  font-weight: 500 !important;
+}
+
+.colorBlack {
+  color: black;
+}
