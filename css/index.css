@@ -13,6 +13,10 @@
   font-weight: 300 !important;
 }
 
+p {
+  font-size: 1.2rem !important;
+}
+
 .bgColorRed {
   background-color: red;
 }
@@ -156,6 +160,10 @@
 
 .fontWeight500 {
   font-weight: 500 !important;
+}
+
+.fontWeight300 {
+  font-weight: 300 !important;
 }
 
 .colorBlack {

@@ -22,4 +22,10 @@ $(function () {
     e.preventDefault();
     redirectTo('faqScreen.html');
   });
+
+  $('#btnAboutUs').click(function (e) {
+    e.preventDefault();
+    redirectTo('aboutUsScreen.html');
+  });
+
 });

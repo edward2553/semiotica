@@ -30,11 +30,11 @@
       </a>
 
       <div class="col-sm-12 col-md-8 text-end">
-        <button class="btn btn-link" id="btnCatalog">Catálogo</button>
-        <button class="btn btn-link" id="btnLogin">Iniciar sesion</button>
-        <button class="btn btn-link" id="btnRegistro">Registro</button>
-        <button class="btn btn-link" id="btnDocumentation">PQRS</button>
-        <button class="btn btn-link" id="btnRegistro">Sobre nosotros</button>
+        <button class="btn btn-link colorBlue" id="btnCatalog">Catálogo</button>
+        <button class="btn btn-link colorBlue" id="btnLogin">Iniciar sesión</button>
+        <button class="btn btn-link colorBlue" id="btnRegistro">Registro</button>
+        <button class="btn btn-link colorBlue" id="btnDocumentation">PQRS</button>
+        <button class="btn btn-link colorBlue" id="btnAboutUs">Sobre nosotros</button>
         <button class="btn">
           <a target="_blank" class="colorBlack" href="https://www.facebook.com/"
             ><i class="fa fa-facebook"></i
@@ -100,7 +100,7 @@
                   <div class="accordion-body">
                     <h3 class="fontWeight500">Compras</h3>
                     <div class="my-4">
-                      <h5 class="fontWeight500">
+                      <h5 class="fontWeight300">
                         ¿Cómo puedo realizar un pedido en su tienda en línea?
                       </h5>
                       <p>
@@ -110,7 +110,7 @@
                       </p>
                     </div>
                     <div class="my-4">
-                      <h5 class="fontWeight500">
+                      <h5 class="fontWeight300">
                         ¿Cuáles son las opciones de pago disponibles?
                       </h5>
                       <p>
@@ -120,7 +120,7 @@
                       </p>
                     </div>
                     <div class="my-4">
-                      <h5 class="fontWeight500">
+                      <h5 class="fontWeight300">
                         ¿Ofrecen envío internacional?
                       </h5>
                       <p>
@@ -131,7 +131,7 @@
                       </p>
                     </div>
                     <div class="my-4">
-                      <h5 class="fontWeight500">
+                      <h5 class="fontWeight300">
                         ¿Cuánto tiempo tomará recibir mi pedido?
                       </h5>
                       <p>
@@ -141,7 +141,7 @@
                       </p>
                     </div>
                     <div class="my-4">
-                      <h5 class="fontWeight500">
+                      <h5 class="fontWeight300">
                         ¿Qué debo hacer si recibo un producto defectuoso o
                         incorrecto?
                       </h5>
@@ -153,7 +153,7 @@
                       </p>
                     </div>
                     <div class="my-4">
-                      <h5 class="fontWeight500">
+                      <h5 class="fontWeight300">
                         ¿Tienen una política de devolución?
                       </h5>
                       <p>
@@ -163,7 +163,7 @@
                       </p>
                     </div>
                     <div class="my-4">
-                      <h5 class="fontWeight500">
+                      <h5 class="fontWeight300">
                         ¿Ofrecen garantías en sus productos?
                       </h5>
                       <p>
@@ -232,7 +232,7 @@
                     <a
                       target="_blank"
                       href="https://www.itu.int/en/ITU-D/Projects/Documents/ProjectDocumentTemplate.pdf"
-                      >Link a la documentacion</a
+                      >Link a la documentación</a
                     >
                   </div>
                 </div>
@@ -393,7 +393,7 @@
                     aria-expanded="false"
                     aria-controls="collapseSeven"
                   >
-                    Contáctanos
+                    Contáctenos
                   </button>
                 </h2>
                 <div
@@ -403,9 +403,50 @@
                   data-bs-parent="#accordionExample"
                 >
                   <div class="accordion-body">
-                    <p>
-                      form contcto
-                    </p>
+                    <div class="container">
+                      <div class=" p-5">
+                        <h4 class="fontWeight300">Formulario de contacto</h4>
+                        <div>
+                          <form>
+                            <div class="form-group mb-3">
+                              <label for="nameContact">Nombre</label>
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="nameContact"
+                                aria-describedby="nameHelp"
+                                placeholder="Escriba su nombre"
+                              />
+                            </div>
+                            <div class="form-group mb-3">
+                              <label for="lastNameContact">Apellido</label>
+                              <input
+                                type="text"
+                                max="50"
+                                class="form-control"
+                                id="lastNameContact"
+                                aria-describedby="lastNameContact"
+                                placeholder="Escriba su apellido"
+                              />
+                            </div>
+                            <div class="form-group mb-3">
+                              <label for="exampleInputEmail1">Correo electrónico</label>
+                              <input
+                                type="email"
+                                class="form-control"
+                                id="exampleInputEmail1"
+                                aria-describedby="emailHelp"
+                                placeholder="Escriba su correo electrónico"
+                              />
+                            </div>
+                            <div class="form-group mb-3">
+                              <label for="messageText">Mensaje</label>
+                              <textarea class="form-control" aria-label="With textarea"></textarea>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -439,7 +480,7 @@
           >
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link px-2 text-muted">Sobre nosotros</a>
+          <a href="aboutUsScreen.html" class="nav-link px-2 text-muted">Sobre nosotros</a>
         </li>
       </ul>
       <p class="text-center text-muted">© 2021 Easy Tech, Inc</p>
